@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dulce Bocado</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      width: 11%;
+      border: #000000 5px outset;
+    }
+
+    body {
+        background-color: rgba(204, 141, 109, 0.979);
+        font-family: cursive;
+        color: #f1f1f1;
+    }
+
+    /* Estilo de header */
+    header {
+        background-color: rgb(157, 55, 4);
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+
+    /* Crear 2 columnas con la misma posición en la fila */
+    nav {
+      float: initial;
+      width: 30%;
+      height: 1400px;
+      /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    dt {
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      margin-left: auto;
+      margin-right: auto;
+      width: max-content;
+      text-align: center;
+      border: 1px solid;
+      border-collapse: collapse;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 100%;
+      background-color: #FDD4D274;
+      text-align: center;
+      /*height: 300px;*/
+    }
+
+    form {
+      margin-top: 10px;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Estilo de footer */
+    footer {
+        background-color: rgb(157, 55, 4);
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  
+  <h1>
+    Dulce Bocado
+  </h1>
+  <h2>
+    Administrador
+  </h2>
+  <hr>
+
+</header>
+
+<section>
+  <article>
+    <section>
+
+      <h2><b>Sabores en existencia</b></h2>
+
+      <table>
+
+        <tr>
+          <th>Sabores</th>
+          <th>Existencia</th>
+        </tr>
+
+        <tr>
+          <td>Chocolate</td>
+          <td> 5 </td>
+        </tr>
+        <tr>
+            <td>Fresa</td>
+            <td> 10 </td>
+        </tr>
+          <tr>
+            <td>Café</td>
+            <td> 4 </td>
+        </tr>        
+      </table>
+
+      <h2>Adornos en existencia</h2>
+      <table>
+        <tr>
+          <th>Adornos</th>
+          <th>Existencia</th>
+        </tr>
+
+        <tr>
+          <td>Velas</td>
+          <td> 20 </td>
+        </tr>
+        <tr>
+          <td>Velas Forma</td>
+          <td> 25 </td>
+        </tr>
+          <tr>
+          <td>Decoración fondant</td>
+          <td> 10 </td>
+        </tr>        
+      </table><br><br>
+   
+      <hr>
+    </section>
+
+    <section>
+
+      <h2><b>Pedidos Recibidos</b></h2>
+
+      <table>
+        
+        <tr>
+          <th>Nombre</th>
+          <th>Teléfono</th>
+          <th>Correo Electrónico</th>
+          <th>Descripción</th>
+          <th>Sabores seleccionados</th>
+          <th>Adornos requeridos</th>          
+        </tr>
+        <tr>
+          <td>Ángel Castillo</td>
+          <td>8715487958</td>
+          <td>angel123@gmail.com</td>
+          <td>Pastel cumpleaños chocolate</td>
+          <td>Chocolate</td>
+          <td>Velitas, Muñeco fondant</td>          
+        </tr>
+        <tr>
+            <td>Jennifer Ortiz</td>
+            <td>8712547894</td>
+            <td>chicajenni@hotmail.com</td>
+            <td>Pastel de fresas</td>
+            <td>Fresa</td>
+            <td>Velitas</td>          
+        </tr>
+        <tr>
+            <td>Luis Martín</td>
+            <td>8715151548</td>
+            <td>Luismartinuac@hotmail.com</td>
+            <td>Pastel de chocolate y café</td>
+            <td>Chocolate, café</td>
+            <td>Velitas</td>          
+        </tr>      
+        <br>
+      </table>
+      
+
+    </section>
+  </article>
+</section>
+
+<footer>
+    <p>            
+        TecnoPasteles™<br>
+        Dirección:           
+        <a href="https://goo.gl/maps/b3aNGf54keukxBuP6" target="_blank">Calle Av. Boca de Ent. 5007, Residencial las Torres</a><br>
+        Teléfono: 871234567
+        Horarios de atención: 9:00-20-30
+    </p>     
+</footer>
+
+</body>
+</html>
